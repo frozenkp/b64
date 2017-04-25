@@ -1,7 +1,7 @@
 # b64
 b64 is a base64 encoder & decoder with different table. 
 
-You can use default table "A~Za~z0~9+/" or a custom table.
+You can use default table "A\~Za\~z0~9+/" or a custom table.
 
 ## format
 ```bash
