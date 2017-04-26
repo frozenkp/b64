@@ -4,7 +4,7 @@ b64 is a base64 encoder & decoder with different table.
 You can use default table "A\~Za\~z0~9+/" or a custom table.
 
 ## format
-```bash
+```
 b64 (-d | -e) [-r outputTable.txt | -t table.txt] file.txt
 ```
 
@@ -22,6 +22,16 @@ when ```-r``` is on, b64 will build a random table, and store the table in the f
 
 ### -t string
 when ```-t``` is on, b64 will decode/encode the file with table you specify.
+
+### -m int
+Decoding or encoding  a text multiple times. If your table file contains only one table, b64 will decode/encode the text with that table n times.
+
+here is a example:
+
+```bash
+$ b64 -e -r table -m 10 plainText > ciphertext
+$ b64 -d -t table -m 10 cipherText
+```
 
 ### -v
 show the version of b64.
