@@ -1,3 +1,5 @@
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) 
+
 # b64
 b64 is a base64 encoder & decoder with different table. 
 
