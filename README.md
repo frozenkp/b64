@@ -22,3 +22,6 @@ when ```-r``` is on, b64 will build a random table, and store the table in the f
 
 ### -t string
 when ```-t``` is on, b64 will decode/encode the file with table you specify.
+
+### -v
+show the version of b64.

@@ -68,13 +68,24 @@ func base64Decode(src, table string){
 	fmt.Println(string(dec))
 }
 
+func b64Version(){
+  fmt.Println("b64 v1.0")
+}
+
 func main() {
 	random := flag.String("r", "", "use random table and output table to specific data")
 	custom := flag.String("t", "", "use custom table")
 	decode := flag.Bool("d", false, "decode mode")
 	encode := flag.Bool("e", false, "encode mode")
+        version := flag.Bool("v", false, "b64 version")
 
 	flag.Parse()
+
+        // check special case
+        if *version {
+          b64Version()
+          return
+        }
 
 	// check mode
 	if *decode && *encode {
