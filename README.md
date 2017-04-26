@@ -25,3 +25,6 @@ when ```-t``` is on, b64 will decode/encode the file with table you specify.
 
 ### -v
 show the version of b64.
+
+## download
+[download link](https://github.com/FrozenKP/b64/releases/tag/1.0)
